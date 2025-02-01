@@ -24,59 +24,169 @@
               colors: {
                 clifford: '#da373d',
               }
-            }
-          }
+            }    
+          } 
         }
       </script>
 </head>
 <body>
 <!-- body section -->
 
-<header class="flex justify-around mt-1 bg-yellow-100">
-    <div class="flex">
-<img src="./images/logo-header.png">
-<p>Browse<span class="text-cyan-200">4</span>Pets</p>
-    </div>
-<div class="flex">
-    <ul class="flex">
-        <li>Find a breeds</li>
-        <li>Breeds</li>
-        <li>Cotact US</li>
-    </ul>
-</div>
-    <div>
-      <ul class="flex">
-        <li><i class="fa-regular fa-bell"></i></li>
-        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-        <li><button class="btn btn-outline btn-warning">Warning</button></li>
-        <li><button class="btn btn-warning">Warning</button></li>
-      </ul>
-    </div>
-
-    
+<header class="flex bg-yellow-50 justify-between items-center px-8 py-4 bg-white shadow-md">
+  <div class="flex items-center">
+    <span class="text-2xl font-bold text-yellow-600">Browse<span class="text-gray-800">4</span>Pets</span>
+  </div>
+  <nav class="flex gap-6">
+    <a  class="text-gray-700 hover:text-yellow-600">Find a pet</a>
+    <a class="text-gray-700 hover:text-yellow-600">Breeds</a>
+    <a  class="text-gray-700 hover:text-yellow-600">Contact us</a>
+  </nav>
+  <div class="flex items-center gap-4">
+    <button class="text-gray-700 px-4 py-2 hover:underline">Login</button>
+    <button class="bg-yellow-400 text-white px-4 py-2 rounded-lg hover:bg-yellow-500">Register</button>
+  </div>
 </header>
 
-<section class="mt-5 bg-gray-50">
-    
-<div class="absolute">
-    <h1 class="text-5xl mb-3">Pamper Your Pet,<br> Because They Deserve the Bes</h1>
-    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-    <button class="btn mt-3 btn-secondary">Secondary</button>
-</div>
-<div class="relative">
-    <img src="./images/cat-big.png">
-</div>
-</section> 
+<main class="flex flex-col md:flex-row items-center justify-center p-10">
+  <!-- Text Section -->
+  <div class="max-w-md text-center md:text-left">
+    <h1 class="text-5xl font-bold leading-tight mb-4">
+      Pamper Your Pet, <br>Because They Deserve the Best
+    </h1>
+    <p class="text-gray-600 text-lg mb-6">
+      Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+    </p>
+    <button class="bg-yellow-400 text-white px-6 py-3 rounded-lg hover:bg-yellow-500">Find a pet</button>
+  </div>
 
-
+  <!-- Image Section -->
+  <div class="mt-10 md:mt-0 md:ml-8">
+    <img src="./images/cat-big.png" class="w-full max-w-md rounded-lg shadow-md">
+  </div>
+</main>
 <!-- this is the browse section -->
-
-
-<section class="flex flex-col-2 bg-gray-500">
-    <div class="bg-yellow-100">
-<img class="rounded-lg" src="./images/cute-dog-mid.png">
+<section class="p-10">
+  <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-left">Browse By Categories</h2>
+  
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+    <!-- Category Card Template -->
+    <div class="bg-yellow-300 rounded-lg p-4 flex flex-col items-center shadow-md hover:shadow-lg">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+        <img src="./images/dog-cartoon.png"  class="w-10 h-10">
+      </div>
+      <h3 class="text-xl font-semibold mt-4">Dog</h3>
+      <p class="text-gray-600">3 items</p>
     </div>
 
+    <div class="bg-yellow-300 rounded-lg p-4 flex flex-col items-center shadow-md hover:shadow-lg">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+        <img src="./images/fish-cartoon.png" class="w-10 h-10">
+      </div>
+      <h3 class="text-xl font-semibold mt-4">Fish</h3>
+      <p class="text-gray-600">3 items</p>
+    </div>
+
+    <div class="bg-yellow-300 rounded-lg p-4 flex flex-col items-center shadow-md hover:shadow-lg">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+        <img src="./images/cat-cartoon.png" alt="Cat Icon" class="w-10 h-10">
+      </div>
+      <h3 class="text-xl font-semibold mt-4">Cat</h3>
+      <p class="text-gray-600">3 items</p>
+    </div>
+
+    <div class="bg-yellow-300 rounded-lg p-4 flex flex-col items-center shadow-md hover:shadow-lg">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+        <img src="./images/bird-cartoon.png"  class="w-10 h-10">
+      </div>
+      <h3 class="text-xl font-semibold mt-4">Birds</h3>
+      <p class="text-gray-600">3 items</p>
+    </div>
+
+    <div class="bg-yellow-300 rounded-lg p-4 flex flex-col items-center shadow-md hover:shadow-lg">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+        <img src="./images/cute-pet-small.png"  class="w-10 h-10">
+      </div>
+      <h3 class="text-xl font-semibold mt-4">Small pet</h3>
+      <p class="text-gray-600">3 items</p>
+    </div>
+
+    <div class="bg-yellow-300 rounded-lg p-4 flex flex-col items-center shadow-md hover:shadow-lg">
+      <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+        <img src="./images/rabbit-cartoon.png"  class="w-10 h-10">
+      </div>
+      <h3 class="text-xl font-semibold mt-4">Rabbit</h3>
+      <p class="text-gray-600">2 items</p>
+    </div>
+  </div>
 </section>
+<div class="max-w-6xl mx-auto bg-yellow-50">
+  <h2 class="text-2xl font-bold mb-6">Trending Pet Products</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+      <!-- Feature Card -->
+      <div class="bg-yellow-200 p-6 rounded-lg flex flex-col justify-between">
+          <div>
+              <h3 class="text-lg font-bold">T-Shirt For Dogs</h3>
+              <p class="text-sm mt-2 text-gray-600">Discover a world of treats, toys, and essentials handpicked for you.</p>
+          </div>
+          <div class="mt-4 flex justify-between items-end">
+              <button class="bg-white text-black px-4 py-2 rounded shadow">Shop Now</button>
+              <img src="./images/dog-cartoon.png"  class="h-24">
+          </div>
+      </div>
+      
+      <!-- Product Grid -->
+      <div class="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="bg-white p-4 shadow rounded-lg flex items-center space-x-4 text-left">
+              <img src="./images/bird-cartoon.png" class="w-20 h-20">
+              <div>
+                  <span class="text-yellow-500 block">⭐ 4.5</span>
+                  <span class="font-semibold block">Pet Bed</span>
+                  <span class="text-gray-500 block">$39.99</span>
+              </div>
+          </div>
+          
+          <div class="bg-white p-4 shadow rounded-lg flex items-center space-x-4 text-left">
+              <img src="./images/bird-cartoon.png" class="w-20 h-20">
+              <div>
+                  <span class="text-yellow-500 block">⭐ 4.5</span>
+                  <span class="font-semibold block">Pet Bed</span>
+                  <span class="text-gray-500 block">$39.99</span>
+              </div>
+          </div>
+          <div class="bg-white p-4 shadow rounded-lg flex items-center space-x-4 text-left">
+              <img src="./images/bird-cartoon.png" class="w-20 h-20">
+              <div>
+                  <span class="text-yellow-500 block">⭐ 4.5</span>
+                  <span class="font-semibold block">Pet Bed</span>
+                  <span class="text-gray-500 block">$39.99</span>
+              </div>
+          </div>
+          <div class="bg-white p-4 shadow rounded-lg flex items-center space-x-4 text-left">
+              <img src="./images/bird-cartoon.png" class="w-20 h-20">
+              <div>
+                  <span class="text-yellow-500 block">⭐ 4.5</span>
+                  <span class="font-semibold block">Pet Bed</span>
+                  <span class="text-gray-500 block">$39.99</span>
+              </div>
+          </div>
+          <div class="bg-white p-4 shadow rounded-lg flex items-center space-x-4 text-left">
+              <img src="./images/bird-cartoon.png" class="w-20 h-20">
+              <div>
+                  <span class="text-yellow-500 block">⭐ 4.5</span>
+                  <span class="font-semibold block">Pet Bed</span>
+                  <span class="text-gray-500 block">$39.99</span>
+              </div>
+          </div>
+          <div class="bg-white p-4 shadow rounded-lg flex items-center space-x-4 text-left">
+              <img src="./images/bird-cartoon.png" class="w-20 h-20">
+              <div>
+                  <span class="text-yellow-500 block">⭐ 4.5</span>
+                  <span class="font-semibold block">Pet Bed</span>
+                  <span class="text-gray-500 block">$39.99</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 </body>
 </html>
