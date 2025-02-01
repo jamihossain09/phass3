@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="./images/cat-big.png">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+<!-- body section -->
+
+<header class="flex justify-around mt-1 bg-yellow-100">
+    <div class="flex">
+<img src="./images/logo-header.png">
+<p>Browse<span class="text-cyan-200">4</span>Pets</p>
+    </div>
+<div class="flex">
+    <ul class="flex">
+        <li>Find a breeds</li>
+        <li>Breeds</li>
+        <li>Cotact US</li>
+    </ul>
+</div>
+    <div>
+      <ul class="flex">
+        <li><i class="fa-regular fa-bell"></i></li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><button class="btn btn-outline btn-warning">Warning</button></li>
+        <li><button class="btn btn-warning">Warning</button></li>
+      </ul>
+    </div>
+
+    
+</header>
+
+<section class="mt-5 bg-gray-50">
+    
+<div class="absolute">
+    <h1 class="text-5xl mb-3">Pamper Your Pet,<br> Because They Deserve the Bes</h1>
+    <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+    <button class="btn mt-3 btn-secondary">Secondary</button>
+</div>
+<div class="relative">
+    <img src="./images/cat-big.png">
+</div>
+</section> 
+
+
+<!-- this is the browse section -->
+
+
+<section class="flex flex-col-2 bg-gray-500">
+    <div class="bg-yellow-100">
+<img class="rounded-lg" src="./images/cute-dog-mid.png">
+    </div>
+
+</section>
+</body>
+</html>
